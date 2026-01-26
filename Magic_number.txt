@@ -1,9 +1,8 @@
-Čítal som si /challenge/cimg.
+cat/challenge/cimg.
+Mal 4 bajtovy header
 
-Všimol som si, že header má byť 4-bajtový.
-
-Skúsil som teda pomocou echo zapísať do example.cimg reťazec "abcd",
-ale program hlásil nesprávny magic number.
+Cez echo som zapísal "abcd" do example.cimg
+Nefungoval a vypisoval nesprávny magic number
 
 Preto som si /challenge/cimg prešiel ešte raz a zistil som,
 že magic number má byť zapísaný v tvare b"".
