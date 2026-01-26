@@ -1,0 +1,6 @@
+Prečítal som si /challenge/cimg.
+cat/challenge/cimg
+Kod bol hexadecimalny
+Pri prevode mi vypisalo little
+Little-endian znamena že treba zapisať bajti v opačnom poradí.
+Po úprave fungovalo
