@@ -1,0 +1,13 @@
+MAGIC   = b"cIMG"
+VERSION = 2
+WIDTH   = 75
+HEIGHT  = 22
+
+PIXEL = bytes([0x8C, 0x1D, 0x40, ord("A")])
+
+with open("example.cimg", "wb") as f:
+    f.write(MAGIC)
+    f.write(VERSION.to_bytes(4, "little"))
+    f.write(WIDTH.to_bytes(8, "little"))
+    f.write(HEIGHT.to_bytes(8, "little"))
+    f.write(PIXEL * (WIDTH * HEIGHT))
