@@ -1,0 +1,13 @@
+#!/bin/python
+
+HEADER_MAGIC = b"cIMG"
+VERSION      = 1
+WIDTH        = 79
+HEIGHT       = 24
+
+with open("valid.cimg", "wb") as file:
+    file.write(HEADER_MAGIC)
+    file.write(VERSION.to_bytes(4, "little"))
+    file.write(WIDTH.to_bytes(2, "little"))
+    file.write(HEIGHT.to_bytes(4, "little"))
+    file.write(b"\x20" * (WIDTH * HEIGHT))
